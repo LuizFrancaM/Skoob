@@ -307,14 +307,194 @@
 <br />
 <div class="row-fluid">
             <div class="span7">
-                        <form action="/acervo/livro/isbn/" method="post">
+ <!--*****************************************MODIFICAÇÕESBETO*****************************************************-->
+                <!-- id dos input id="LivroIsbn" RETIRADO -->
+<form action="/acervo/livro/isbn/" method="post">
 
-                                    Informe o ISBN ou ASIN do livro:<br />
-                                    <div style="border:0px solid red;">
-                                                <input name="data[Livro][isbn]" style="width:300px; margin-top:10px; margin-right:10px;" type="text" id="LivroIsbn"/><input class="btn btn-primary" style="" type="submit" value=" Buscar "/>                                    </div>
+            ISBN 10 ou ASIN do livro:<br />
+            <div style="border:0px solid red;">
+            <input name="txt_isbn10" style="width:300px; margin-top:10px; margin-right:10px;" type="text" />
+             </div>
 
-                        </form>
+            <div style="border:0px solid red;">
+            ISBN 13 ou ASIN do livro:<br />
+            <input name="txt_isbn13" style="width:300px; margin-top:10px; margin-right:10px;" type="text"/>
             </div>
+    
+            <div style="border:0px solid red;">
+            Nome do livro:<br />
+            <input name="txt_nome" style="width:300px; margin-top:10px; margin-right:10px;" type="text" />
+            </div>
+
+            <div style="border:0px solid red;">
+            Lançamento:<input name="chk_lancamento" style="margin-top:0px; margin-left:15px" type="checkbox" /> 
+            <br/>
+            </div>
+    
+            <div style="border:0px solid red;">
+            <br/>Sinopse:<br />
+            <textarea name="txt_sinopse" style="width:300px;height:150px;margin-top:10px; margin-right:10px"></textarea>
+            </div>
+    
+            <div style="border:0px solid red;">
+            <br/>Edição:<br />
+            <input name="txt_edicao" style="width:50px; margin-top:10px; margin-right:10px;" type="number" min="1" max="100" />
+            </div>
+            
+            <div style="border:0px solid red;">
+            <br/>Páginas:<br />
+            <input name="txt_pagina" style="width:100px; margin-top:10px; margin-right:10px;" type="number" min="1" max="9999" />
+            </div>
+    
+            <div style="border:0px solid red;">
+            Idioma do livro:<br />
+            <input name="txt_idioma" style="width:300px; margin-top:10px; margin-right:10px;" type="text" />
+            </div>
+    
+            <div style="border:0px solid red;">
+            Idioma original do livro:<br />
+            <input name="txt_idioma_original" style="width:300px; margin-top:10px; margin-right:10px;" type="text"/>
+            </div>
+    
+            <div style="border:0px solid red;">
+            Dimensão do livro(00x00(cm)):<br />
+            <input name="txt_tamanho" style="width:100px; margin-top:10px; margin-right:10px;" type="text"/>
+            </div>
+    
+            <div style="border:0px solid red;">
+            Peso do livro(g):<br />
+            <input name="txt_peso" style="width:100px; margin-top:10px; margin-right:10px;" type="text"/>
+            </div>
+    
+            <div style="border:0px solid red;">
+            Tipo de capa:<br />
+            <input name="txt_capa" style="width:300px; margin-top:10px; margin-right:10px;" type="text" />
+            </div>
+            
+            <div style="border:0px solid red;">
+            Capa(url):<br />
+            <input name="txt_url_capa" style="width:300px; margin-top:10px; margin-right:10px;" type="text"/>
+            </div>
+    
+            <div style="border:0px solid red;">
+            Autor:<br />
+            <input name="txt_autor" style="width:300px; margin-top:10px; margin-right:10px;" type="text" />
+            </div>
+    
+           <div style="border:0px solid red;">
+            Editora:<br />
+            <input name="txt_editora" style="width:300px; margin-top:10px; margin-right:10px;" type="text"/>
+            </div>
+    
+            <div style="border:0px solid red;">   
+            <table>
+                <tbody>
+                Catergoria:
+                    <tr>
+                        <td>
+                        <td><br/>
+    <select name = "txt_categoria" data-placeholder = "Selecione os gêneros..." class = "chzn-select" multiple tabindex = "1" style="width:300px; margin-top:10px; margin-right:10px;">
+        <option value = ''></option>
+        <option '..' value='43'>Administração</option>
+        <option '..' value='44'>Agropecuária</option>
+        <option '..' value='79'>Almanaques</option>
+        <option '..' value='45'>Animais de Estimação</option>
+        <option '..' value='53'>Arquitetura e Decoração</option>
+        <option '..' value='37'>Artes</option>
+        <option '..' value='1'>Autoajuda</option>
+        <option '..' value='2'>Aventura</option>
+        <option '..' value='46'>Bem estar e lazer</option>
+        <option '..' value='3'>Biografia, Autobiografia, Memórias</option>
+        <option '..' value='47'>Biologia</option>
+        <option '..' value='4'>Chick-lit</option>
+        <option '..' value='50'>Cinema</option>
+        <option '..' value='54'>Comunicação</option>
+        <option '..' value='6'>Contos</option>
+        <option '..' value='51'>Crime</option>
+        <option '. SELECTED .' value='7'>Crônicas</option>
+        <option '..' value='8'>Culinária e Gastronomia</option>
+        <option '..' value='55'>Design</option>
+        <option '..' value='56'>Dicionários</option>
+        <option '..' value='57'>Didáticos / Técnico</option>
+        <option '..' value='58'>Direito</option>
+        <option '..' value='82'>Distopia</option>
+        <option '..' value='9'>Drama</option>
+        <option '..' value='10'>Economia, Finanças</option>
+        <option '..' value='81'>Educação</option>
+        <option '..' value='59'>Engenharia</option>
+        <option '..' value='12'>Ensaios</option>
+        <option '..' value='41'>Entretenimento</option>
+        <option '..' value='61'>Erótico</option>
+        <option '..' value='13'>Esoterismo</option>
+        <option '..' value='14'>Esportes</option>
+        <option '..' value='16'>Fábula</option>
+        <option '..' value='15'>Fantasia</option>
+        <option '..' value='34'>Ficção</option>
+        <option '..' value='35'>Ficção científica</option>
+        <option '..' value='17'>Filosofia</option>
+        <option '..' value='86'>Fotografia</option>
+        <option '..' value='65'>Geografia</option>
+        <option '..' value='19'>História</option>
+        <option '..' value='67'>História do Brasil</option>
+        <option '..' value='66'>História Geral</option>
+        <option '..' value='40'>Horror</option>
+        <option '..' value='18'>HQ,comics,mangá</option>
+        <option '..' value='5'>Humor, Comédia</option>
+        <option '..' value='20'>Infantil</option>
+        <option '..' value='21'>Infantojuvenil</option>
+        <option '..' value='68'>Informática e Tecnologia</option>
+        <option '..' value='80'>Internet</option>
+        <option '..' value='69'>Jogos</option>
+        <option '..' value='22'>Jovem adulto</option>
+        <option '..' value='70'>LGBT / GLS</option>
+        <option '..' value='60'>Línguas Estrangeiras</option>
+        <option '. SELECTED .' value='72'>Literatura Brasileira</option>
+        <option '..' value='71'>Literatura Estrangeira</option>
+        <option '..' value='77'>Marketing e Publicidade</option>
+        <option '..' value='49'>Matemática</option>
+        <option '..' value='73'>Medicina e Saúde</option>
+        <option '..' value='23'>Moda, Estilo e Beleza</option>
+        <option '..' value='85'>Música</option>
+        <option '..' value='24'>Não-ficção</option>
+        <option '..' value='11'>Negócios e Empreendedorismo</option>
+        <option '..' value='74'>Pedagogia</option>
+        <option '..' value='25'>Poemas, poesias</option>
+        <option '..' value='83'>Política</option>
+        <option '..' value='26'>Psicologia</option>
+        <option '..' value='75'>Religião e Espiritualidade</option>
+        <option '..' value='42'>Romance</option>
+        <option '..' value='36'>Romance policial</option>
+        <option '..' value='78'>Sexo e Sexologia</option>
+        <option '..' value='48'>Sociologia</option>
+        <option '..' value='84'>Steampunk</option>
+        <option '..' value='52'>Suspense e Mistério</option>
+        <option '..' value='32'>Terror</option>
+        <option '..' value='76'>Turismo e Viagens</option>
+    </select>
+                        </td>
+        </tr>
+        <td>
+            <br />
+        
+</td>
+     </tbody>
+</table>
+    </div>
+            <div style="border:0px solid red;">
+            Loja:<br />
+            <input name="txt_loja" style="width:300px; margin-top:10px; margin-right:10px;" type="text" id="LivroIsbn"/>
+            </div>
+    
+<!--    BOTÃO -->  
+
+<input class="btn btn-primary" style="" type="submit" value=" Adicionar "/>     
+
+
+
+
+
+</form>
+</div>
             <div class="span5">
                         <div class="alert alert-cinza">
                                     <h2>ISBN</h2>
